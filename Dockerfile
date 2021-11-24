@@ -1,6 +1,6 @@
 FROM ibmcom/ace-mqclient:latest
 ARG file_name
 ARG workspace
-ADD ${file_name}.bar ${workspace}/Barfiles
+ADD \${file_name}.bar ${workspace}/Barfiles
 EXPOSE 7600 7800 7843 9483
 ENV LICENSE accept
